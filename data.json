@@ -1,0 +1,306 @@
+{
+  "personal": {
+    "name": "Prasad Kachare",
+    "full_name": "Prasad Kachare",
+    "role": "Credit Risk & Data Analyst",
+    "tagline": "Building intelligent credit risk, financial analytics and data systems at the intersection of Finance, Machine Learning & Data Engineering",
+    "bio": "MSc Financial Technology student at the University of Birmingham with hands-on industry experience in financial data analysis, credit risk modelling, and ML. I design and build production-grade analytical systems — from credit default prediction and loan scoring to DCF financial models and Excel scorecards — combining quantitative finance with modern software engineering.",
+    "email": "prasadkachare740@gmail.com",
+    "github": "https://github.com/Astuteprasad",
+    "linkedin": "https://www.linkedin.com/in/prasad-kachare-07444022b/",
+    "location": "Birmingham, United Kingdom"
+  },
+  "skills": {
+    "Analytics & Risk": [
+      "Credit Risk Modelling",
+      "WoE / IV Scorecard",
+      "Logistic Regression",
+      "XGBoost",
+      "SHAP",
+      "Monte Carlo"
+    ],
+    "Data & Engineering": [
+      "Python",
+      "SQL",
+      "Apache Spark",
+      "PySpark",
+      "ETL Pipelines",
+      "PostgreSQL"
+    ],
+    "Visualisation & BI": [
+      "Power BI",
+      "Excel (Advanced)",
+      "Flask Dashboards",
+      "Plotly",
+      "Chart.js",
+      "Streamlit"
+    ],
+    "Backend & Tools": [
+      "Flask",
+      "REST APIs",
+      "scikit-learn",
+      "Git",
+      "Databricks",
+      "Jupyter"
+    ]
+  },
+  "experience": [
+    {
+      "role": "Financial Data Analyst Intern",
+      "company": "Padmpanni Technologies OPC Pvt Ltd",
+      "period": "Dec 2023 – Feb 2024",
+      "type": "Industry",
+      "description": "Delivered financial data analysis and Power BI reporting for a technology company in Pune, engineering analysis-ready datasets from raw sales records and building multi-layered dashboards that directly informed management strategy.",
+      "achievements": [
+        "Engineered an analysis-ready dataset from 10,000+ raw sales records across 6 product categories using Python and Excel — applied structured validation rules and cross-checks to achieve 100% data accuracy and reduce preparation time by 35%",
+        "Identified a 50% revenue surge in top-performing categories through margin and trend analysis, delivering pricing and stock recommendations that informed management strategy",
+        "Built multi-layered Power BI dashboards tracking 8 KPIs including revenue trends, gross margin, and month-on-month growth — reducing reporting time by 40%",
+        "Executed variance analysis across 12 reporting periods, quantifying revenue gaps between actuals and targets and delivering structured financial impact reports into the quarterly planning cycle"
+      ]
+    },
+    {
+      "role": "Data Analyst Intern",
+      "company": "Sustanify Energy",
+      "period": "Aug 2024 – Jan 2025",
+      "type": "Industry",
+      "description": "Processed and analysed 360,000+ image records for solar panel defect detection, engineering a structured data pipeline and applying ML-based classification workflows to improve model accuracy and reduce inspection errors.",
+      "achievements": [
+        "Processed and analysed 360,000+ image records, engineering a structured data pipeline through preparation, automated quality validation and systematic cleaning — reducing data errors by 30%",
+        "Applied Python and analytical tools to automate image-based inspection workflows, iterating models through 5+ test cycles to raise classification accuracy to 90%",
+        "Conducted defect-pattern analysis across 5 defect categories, contributing to a 20% improvement in model detection performance",
+        "Presented analytical findings to cross-functional stakeholders, translating complex technical outputs into clear business recommendations aligned with production requirements"
+      ]
+    },
+    {
+      "role": "Visual Programming & ML Tutor",
+      "company": "Impact Academies and Camps",
+      "period": "Jan 2026 – Present",
+      "type": "Teaching",
+      "description": "Delivering structured learning sessions on programming, web development and machine learning concepts to students across multiple ability levels, designing hands-on projects that build practical problem-solving skills.",
+      "achievements": [
+        "Delivered 50+ structured learning sessions on programming, web development and machine learning concepts across 3 different student ability levels",
+        "Designed 15+ hands-on projects and exercises focused on practical problem-solving, logical thinking and applied programming skills — improving student task completion rate by 40%",
+        "Translated complex technical topics into clear, accessible content, maintaining high engagement consistently across all ability groups"
+      ]
+    },
+    {
+      "role": "President — IT Tech Club",
+      "company": "MMCOE, Pune",
+      "period": "2023 – 2024",
+      "type": "Leadership",
+      "description": "Led a 100+ student technology club, personally designing and delivering workshops on programming, ML, and data science. Grew active participation by 50% through new curriculum initiatives and industry speaker events.",
+      "achievements": [
+        "Led 100+ member club — organised workshops on web development, ML, and data science",
+        "Grew student participation by 50% through new initiatives and hackathons",
+        "Coordinated events, coding challenges, and invited industry speakers for AI in Finance sessions"
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "id": "credit-risk-dashboard",
+      "title": "Credit Card Customer Intelligence Dashboard",
+      "short_desc": "Six-tab customer segmentation and risk analytics platform built on 30,000 real UCI credit card records — K-Means clustering, real default rates, and live segment DNA analysis.",
+      "full_desc": "A production-grade credit analytics dashboard built entirely on real data from the UCI Credit Card Default Dataset (Yeh & Lien, 2009) — 30,000 actual credit card customers from a Taiwanese bank. Real K-Means clustering (K=5, scikit-learn) groups customers into five behavioural segments. Every metric — default rates, segment sizes, risk scores, payment ratios — is derived from actual ground-truth labels, not synthetic data. The six-tab Flask dashboard covers portfolio overview, risk vs reward scatter matrix, segment DNA with revenue mix, risk-based pricing engine, ML clustering metrics with real Silhouette/CH/DB scores, and default analysis by age, education, and payment delay.",
+      "category": "Credit Risk",
+      "tech": ["Python", "Flask", "scikit-learn", "K-Means", "PCA", "Chart.js", "Pandas", "UCI Dataset"],
+      "features": [
+        "Built on 30,000 real credit card customers from the UCI Credit Card Default Dataset (Yeh & Lien, 2009) — all metrics, segment sizes, and default rates derived from actual ground-truth labels, not synthetic data.",
+        "Real K-Means clustering (K=5, scikit-learn) producing five behavioural segments — High Spenders (1,978), Revolvers (4,593), Transactors (5,524), Low Engagement (14,241), At-Risk Heavy (3,664) — with Silhouette=0.2762, CH=7,084, DB=1.2754.",
+        "Six-tab Flask dashboard covering portfolio overview, risk vs reward scatter matrix (1,500 customer sample), segment DNA with revenue mix breakdown, risk-based pricing engine with expand/collapse strategy rows, ML clustering metrics, and default analysis by age, education, and payment delay.",
+        "Risk vs Reward matrix plots 1,500 real customers on risk score vs profit score axes, segmented by K-Means cluster, with quadrant analysis: Stars, Opportunistic, Develop, and Watchlist.",
+        "Default analysis tab shows actual observed default rates by age group, education level, payment delay months, and segment — all derived from UCI ground-truth labels, not model predictions.",
+        "PCA on real 30,000-record dataset: PC1 explains 31.6% variance, PC2 explains 20.0% — used for cluster visualisation and dimensionality analysis of six behavioural features."
+      ],
+      "github": "https://github.com/Astuteprasad/credit_advanced_analytics",
+      "live": "https://credit-advanced-analytics.onrender.com/",
+      "highlight": true,
+      "type": "dashboard"
+    },
+    {
+      "id": "loan-approval-dashboard",
+      "title": "Loan Approval Advanced Analytics Dashboard",
+      "short_desc": "Six-tab loan decisioning platform with WoE scorecard, live cut-off simulator, fairness audit, adverse action codes, and vintage analysis — built to FCA Consumer Duty standards.",
+      "full_desc": "A six-tab interactive loan decisioning platform built on a fully calibrated Weight of Evidence scorecard across six variables. Features a live cut-off strategy simulator showing real-time tradeoffs between approval rate, bad debt rate, revenue, and net expected value — the core daily analytical work of a credit risk strategy team. Includes adverse action reason codes, a fairness audit with Disparate Impact Ratio, risk-based pricing by score band, and vintage bad rate curves across six monthly origination cohorts.",
+      "category": "Credit Risk",
+      "tech": ["Python", "Flask", "WoE Scorecard", "Chart.js", "Pandas", "NumPy", "REST API"],
+      "features": [
+        "WoE scorecard across six variables (income, DTI, credit history, delinquencies, employment, loan-to-income) calibrated to base score 600 and PDO 20 — every 20-point increase halves the default probability — with three-way decisioning: Accept >= 650, Refer 500-649, Decline < 500.",
+        "Cut-off strategy simulator where dragging the accept threshold dynamically updates approval rate, bad debt rate, estimated revenue, bad debt cost, and net expected value in real time — demonstrating that the optimal cut-off maximises net value, not minimises bad debt rate.",
+        "Single application decisioning engine returning live credit score, risk band, APR (9.9% to 29.9%), approved amount, estimated monthly payment, SHAP-style score waterfall showing each variable's point contribution, and adverse action reason codes for declines — consistent with FCA Consumer Duty disclosure requirements.",
+        "Fairness audit computing Disparate Impact Ratio across gender, age band, and employment type — groups below 0.80 DIR threshold flagged under the 80% rule (FCA Consumer Duty and Equality Act 2010 standard) — plus intersectional gender x age approval rate matrix.",
+        "Risk-based pricing across five score bands — Prime (700+, APR 9.9%, max £25,000) through Sub-Prime B (500-599, APR 24.9%, max £3,000) to Decline — with revenue mix breakdown showing Interest, Interchange, and Fees split per segment and expand/collapse strategy rows per band.",
+        "Vintage analysis tracking six monthly origination cohorts at 1, 3, 6, 9, 12, 18, and 24 months on book — bad rate growth curves per cohort demonstrating that lower-score cohorts deteriorate faster, validating scorecard discrimination over the full loan lifecycle."
+      ],
+      "github": "https://github.com/Astuteprasad/loan_dashboard",
+      "live": "https://loan-dashboard-wu6n.onrender.com/",
+      "highlight": true,
+      "type": "dashboard"
+    },
+    {
+      "id": "ispi-securitisation",
+      "title": "Securitisation Risk ISPI Analytics Dashboard",
+      "short_desc": "Novel composite scoring model for ABS portfolio risk — combining RAROC, Monte Carlo simulation (10,000 paths), stress testing, and a Credit Quality Gate hard rule overlay.",
+      "full_desc": "The Integrated Securitisation Performance Index (ISPI) is an original quantitative framework for evaluating Asset-Backed Securities portfolios. Combines Risk-Adjusted Return on Capital (RAROC), Monte Carlo simulation with fat-tailed Student-t distributions (10,000 paths), multi-scenario stress testing (base, adverse, severe), and a liquidity factor into a single composite score. A Credit Quality Gate automatically blocks deals failing minimum credit thresholds regardless of overall score — replicating hard rule overlays used alongside statistical models in real credit risk strategy.",
+      "category": "Credit Risk",
+      "tech": ["Python", "NumPy", "SciPy", "Monte Carlo", "Pandas", "Plotly", "Streamlit"],
+      "features": [
+        "RAROC-based risk-adjusted return calculation per deal with full sensitivity analysis",
+        "Monte Carlo simulation: 10,000 paths with Student-t fat-tail distributions replicating real credit tail risk",
+        "Multi-scenario stress testing: base, adverse, and severe economic scenarios with quantified portfolio impact",
+        "Credit Quality Gate — hard rule overlay blocking deals below minimum thresholds regardless of composite score",
+        "Tiered decision engine: Invest / Review / Reject with confidence percentiles and deal narrative",
+        "Interactive dashboard: scenario sliders, waterfall charts, portfolio heatmaps, and PDF-exportable reports"
+      ],
+      "github": "https://github.com/Astuteprasad/secu_decision",
+      "live": "https://secudecision-8se48qle2jkuvmwhogha43.streamlit.app/",
+      "highlight": true,
+      "type": "dashboard"
+    },
+    {
+      "id": "excel-credit-risk-scorecard",
+      "title": "Credit Risk Scorecard  Excel Model",
+      "short_desc": "Production-grade WoE scorecard model — 500 UCI-distribution records, real WoE/IV computed from data, KS 30.4%, PSI monitor, and interactive cut-off strategy simulator. 8 fully linked sheets.",
+      "full_desc": "A fully structured Excel credit risk scorecard model built to the standard used by credit risk teams at major UK retailers. Built on 500 loan applications with distributions matching the UCI Credit Card Default Dataset. Weight of Evidence and Information Value computed directly from actual good/bad distributions. The model includes a WoE scorecard with score points calibrated to base score 600 and PDO 20, a portfolio analytics sheet showing KS statistic (30.4%) and Gini coefficient, an interactive cut-off strategy simulator, and a Population Stability Index monitor. All 8 sheets are fully linked.",
+      "category": "Excel",
+      "tech": ["Excel", "WoE / IV Methodology", "KS Statistic", "Gini Coefficient", "PSI Monitor", "openpyxl"],
+      "features": [
+        "500 loan applications with distributions matching UCI Credit Card Default Dataset — default rate 30.4%, matching real credit portfolio benchmarks.",
+        "Weight of Evidence (WoE) and Information Value (IV) computed from actual good/bad distributions across all 6 variables — income, DTI, credit history, delinquencies, employment, and loan-to-income ratio.",
+        "Scorecard calibrated to base score 600 with PDO 20 — every 20-point increase halves default probability — three-way decisioning: Accept ≥650, Refer 500–649, Decline <500.",
+        "Portfolio Analytics sheet with KS Statistic 30.4%, Gini Coefficient, ROC curve data, and score band distribution — all computed from actual data.",
+        "Interactive cut-off strategy simulator showing approval rate, bad rate, revenue, bad debt cost, and net expected value at every threshold from 450 to 750.",
+        "Population Stability Index (PSI) monitor — PSI 0.30 flagged above the 0.25 rebuild threshold with automatic colour-coded status across all score bands."
+      ],
+      "github": "https://github.com/Astuteprasad",
+      "live": "https://docs.google.com/spreadsheets/d/1CWIK21skwRYmYcPQjJvmhITiqBXJraRE/edit?usp=sharing&ouid=112331634934053274652&rtpof=true&sd=true",
+      "highlight": false,
+      "type": "excel",
+      "excel_file": "Credit_Risk_Scorecard_Model.xlsx",
+      "excel_embed": "https://docs.google.com/spreadsheets/d/1CWIK21skwRYmYcPQjJvmhITiqBXJraRE/edit?usp=sharing&ouid=112331634934053274652&rtpof=true&sd=true",
+      "excel_sheets": "Cover · Assumptions · Raw Data · WoE & IV · Scorecard · Portfolio Analytics · Cut-off Strategy · PSI Monitor"
+    },
+    {
+      "id": "excel-tesco-3statement",
+      "title": "Tesco PLC  Three-Statement Financial Model",
+      "short_desc": "Fully integrated three-statement model on real Tesco financials (FY2021–FY2030E). Balance check = £0 all years. DCF implies 900p vs 471.85p reference. 8 linked sheets.",
+      "full_desc": "A production-grade integrated financial model built on real Tesco PLC data from Annual Reports FY2021–FY2025, with projections to FY2030E. The model is fully integrated — every assumption flows through Income Statement, Balance Sheet, Cash Flow, and DCF simultaneously. The Balance Sheet balances in every projection year using a residual equity plug. WACC 7.0%. GGM implied price 900p vs reference 471.85p. Includes an Investment Thesis sheet with bull/bear case analysis.",
+      "category": "Excel",
+      "tech": ["Excel", "Three-Statement Modelling", "DCF Valuation", "WACC / CAPM", "Tesco Annual Reports", "openpyxl"],
+      "features": [
+        "Real Tesco data FY2021–FY2025 from Annual Reports — Revenue £69,916m, EBITDA £5,439m, Net Debt £9,454m (FY2025 actual). All historical figures directly sourced.",
+        "Fully integrated: change one assumption and Income Statement, Balance Sheet, Cash Flow, and DCF all update simultaneously — no hardcoded projection numbers.",
+        "Balance Sheet balances in every projection year — check row = £0 all five years — using residual equity plug (Equity = Total Assets − Total CL − Total NCL).",
+        "DCF via WACC (7.0%) and Gordon Growth Model — implied price 900p vs reference 471.85p. 5x5 sensitivity table shows full range of outcomes across WACC and terminal growth rate.",
+        "Investment Thesis sheet with business overview, assumption rationale, bull case (+30%), base case, and bear case (-25%) — demonstrates analytical thinking beyond the mechanics.",
+        "KPI Dashboard with 4 live charts: Revenue trend, EBITDA margin, Unlevered FCF, and Net Debt/EBITDA — all updating automatically when assumptions change."
+      ],
+      "github": "https://github.com/Astuteprasad",
+      "live": "https://docs.google.com/spreadsheets/d/1k1n3-F6M9GQgBYR7ObuBmVMkAkx5Vv4q/edit?usp=sharing&ouid=112331634934053274652&rtpof=true&sd=true",
+      "highlight": false,
+      "type": "excel",
+      "excel_file": "Tesco_3Statement_Model_FINAL.xlsx",
+      "excel_embed": "https://docs.google.com/spreadsheets/d/1k1n3-F6M9GQgBYR7ObuBmVMkAkx5Vv4q/edit?usp=sharing&ouid=112331634934053274652&rtpof=true&sd=true",
+      "excel_sheets": "Cover · Investment Thesis · Assumptions · Income Statement · Balance Sheet · Cash Flow · DCF Valuation · KPI Dashboard"
+    },
+    {                             
+      "id": "excel-portfolio-risk",
+      "title": "Portfolio Risk & Optimisation Excel Model",
+      "short_desc": "Modern Portfolio Theory in Excel — efficient frontier via 10,000 Monte Carlo simulations, Sharpe ratio maximisation (Solver), VaR at 95%/99%, and scenario stress testing.",
+      "full_desc": "A quantitative portfolio risk and optimisation model built entirely in Excel, implementing Modern Portfolio Theory from scratch. Covers covariance matrix calculation, efficient frontier generation via 10,000 Monte Carlo simulated portfolios, Sharpe ratio maximisation using Excel Solver, Value at Risk at 95% and 99% confidence, and scenario stress testing across five market scenarios.",
+      "category": "Excel",
+      "tech": ["Excel", "Modern Portfolio Theory", "Monte Carlo Simulation", "VaR", "Excel Solver", "Covariance Matrix"],
+      "features": [
+        "Covariance matrix and correlation heatmap computed from real historical returns data — not manually estimated.",
+        "Efficient frontier generated via 10,000 Monte Carlo simulated portfolios — scatter plot shows full risk/return feasible set.",
+        "Sharpe ratio maximisation using Excel Solver under long-only constraints — produces the tangency portfolio.",
+        "Value at Risk at both 95% and 99% confidence — parametric (Gaussian) and historical simulation compared side by side.",
+        "Stress testing across five scenarios: 2008 financial crisis, COVID March 2020, rising rates 2022, credit spread widening, and custom analyst-defined scenario.",
+        "Portfolio allocation dashboard with dynamic weight inputs — change any weight and all risk/return metrics, VaR, and charts update automatically."
+      ],
+      "github": "https://github.com/Astuteprasad",
+      "live": "",
+      "highlight": false,
+      "type": "excel",
+      "excel_file": "Portfolio_Risk_Optimisation.xlsx",
+      "excel_embed": "https://docs.google.com/spreadsheets/d/YOUR_PORTFOLIO_ID/pubhtml?gid=0&single=true",
+      "excel_sheets": "Cover · Assumptions · Returns Data · Covariance Matrix · Efficient Frontier · Optimisation · VaR · Stress Testing"
+    },
+    {
+      "id": "powerbi-credit-risk",
+      "title": "Credit Risk Portfolio  Power BI Dashboard",
+      "short_desc": "Executive-level Power BI dashboard for credit portfolio monitoring — delinquency trends, risk band migration, vintage performance, and collections strategy analytics.",
+      "full_desc": "A production Power BI dashboard covering the full credit lifecycle from origination through collections — new account volumes, delinquency roll rates, risk band migration matrices, vintage bad rate curves, and collections analytics.",
+      "category": "Power BI",
+      "tech": ["Power BI", "DAX", "Power Query", "M Language", "SQL", "Data Modelling"],
+      "features": [
+        "Full credit lifecycle monitoring: origination to collections with drill-through pages per segment",
+        "Delinquency roll rate analysis: current through 90+ DPD with month-on-month trending",
+        "Risk band migration matrix — tracking score grade movements across the portfolio",
+        "Vintage bad rate curves: 3/6/12/24 month bad rates per origination cohort",
+        "Collections strategy analytics: contact rate, promise-to-pay rate, recovery by channel",
+        "DAX measures: rolling averages, YoY variance, weighted average risk scores"
+      ],
+      "github": "https://github.com/Astuteprasad",
+      "live": "",
+      "highlight": false,
+      "type": "powerbi"
+    },
+    {
+      "id": "powerbi-financial-analytics",
+      "title": "Financial Performance  Power BI Analytics Suite",
+      "short_desc": "Multi-page Power BI suite covering P&L performance, revenue variance waterfall, cost analysis, and forecast vs actuals — built for a retail finance context.",
+      "full_desc": "A comprehensive financial analytics Power BI suite covering executive P&L summary, revenue bridge waterfall, cost analysis, forecast vs actuals tracker, and a what-if scenario modeller.",
+      "category": "Power BI",
+      "tech": ["Power BI", "DAX", "Power Query", "What-If Parameters", "Waterfall Charts", "Forecasting"],
+      "features": [
+        "Executive P&L summary: revenue, EBITDA, net income vs budget and prior year with RAG status",
+        "Revenue bridge waterfall: volume, price, product mix, and FX decomposition",
+        "Fixed vs variable cost split with efficiency ratio and cost-per-unit trending",
+        "Rolling 12-month forecast vs actuals with upper/lower confidence bands",
+        "What-if scenario modeller: adjust volume and margin assumptions interactively",
+        "Automated variance commentary: DAX-driven narrative on key movements"
+      ],
+      "github": "https://github.com/Astuteprasad",
+      "live": "",
+      "highlight": false,
+      "type": "powerbi"
+    },
+    {
+      "id": "spark-recommendation",
+      "title": "Spark Recommendation Engine",
+      "short_desc": "Distributed collaborative filtering recommendation system built on Apache Spark with ALS matrix factorisation — scalable to millions of interactions.",
+      "full_desc": "A scalable recommendation engine built using Apache Spark's MLlib, implementing Alternating Least Squares (ALS) matrix factorisation for collaborative filtering at scale.",
+      "category": "Data",
+      "tech": ["Apache Spark", "PySpark", "ALS", "Python", "Hadoop", "MLlib"],
+      "features": [
+        "ALS collaborative filtering at scale with distributed PySpark pipeline",
+        "Hyperparameter tuning with cross-validation across rank, lambda, and iterations",
+        "Cold-start problem handling with content features for new users/items",
+        "Batch inference pipeline for production recommendations"
+      ],
+      "github": "https://github.com/Astuteprasad",
+      "live": "",
+      "highlight": false,
+      "type": "ml"
+    },
+    {
+      "id": "finbert-sentiment",
+      "title": "Financial News Sentiment NLP Pipeline",
+      "short_desc": "NLP pipeline using FinBERT and TF-IDF to classify sentiment in financial news — generating market signals from credit and securitisation news articles.",
+      "full_desc": "An NLP pipeline analysing sentiment in financial news articles focused on securitisation and credit markets. Compares FinBERT against a TF-IDF + Logistic Regression baseline with a Flask API for real-time scoring.",
+      "category": "ML",
+      "tech": ["Python", "FinBERT", "HuggingFace", "TF-IDF", "scikit-learn", "Flask"],
+      "features": [
+        "FinBERT fine-tuning on financial news corpus for domain-specific sentiment",
+        "TF-IDF baseline comparison with statistical significance testing",
+        "Real-time sentiment scoring REST API with confidence scores",
+        "Sentiment trend visualisation and market signal generation"
+      ],
+      "github": "https://github.com/Astuteprasad",
+      "live": "",
+      "highlight": false,
+      "type": "ml"
+    }
+  ]
+}

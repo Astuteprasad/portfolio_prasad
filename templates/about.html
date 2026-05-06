@@ -1,0 +1,124 @@
+{% extends "base.html" %}
+{% block title %}About — {{ personal.name }}{% endblock %}
+
+{% block content %}
+<section class="pt-32 pb-20 px-6">
+  <div class="max-w-6xl mx-auto">
+
+    <!-- Header -->
+    <div class="mb-16 reveal">
+      <p class="text-accent text-sm font-medium tracking-widest uppercase mb-2">About</p>
+      <h1 class="font-display text-5xl font-800 text-white mb-6 section-heading">Who I Am</h1>
+    </div>
+
+    <!-- Bio + details grid -->
+    <div class="grid lg:grid-cols-5 gap-12 mb-20 reveal">
+      <!-- Bio -->
+      <div class="lg:col-span-3 space-y-5">
+        <p class="text-gray-300 text-lg leading-relaxed">
+          {{ personal.bio }}
+        </p>
+        <p class="text-gray-400 leading-relaxed">
+          My foundation in Finance & Banking informs how I approach ML problems — I care deeply about
+          model interpretability, real-world deployment constraints, and making sure predictions are
+          both accurate and trustworthy.
+        </p>
+        <p class="text-gray-400 leading-relaxed">
+          Outside of building, I lead my university's tech community, running workshops on ML and
+          data science for fellow students, and I've tutored programming to school students — because
+          the best way to understand something is to explain it clearly.
+        </p>
+        <div class="flex flex-wrap gap-4 pt-4">
+          <a href="{{ personal.github }}" target="_blank" rel="noopener"
+             class="px-5 py-2.5 border border-dark-500 text-gray-300 text-sm font-600 rounded-lg
+                    hover:border-accent hover:text-accent transition-all duration-200 flex items-center gap-2">
+            <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/>
+            </svg>
+            GitHub
+          </a>
+          <a href="{{ url_for('contact') }}"
+             class="px-5 py-2.5 bg-accent text-dark-900 text-sm font-700 rounded-lg
+                    hover:bg-cyan-300 transition-all duration-200 glow-accent">
+            Get In Touch
+          </a>
+        </div>
+      </div>
+
+      <!-- Info card -->
+      <div class="lg:col-span-2">
+        <div class="rounded-xl border border-dark-500/50 bg-dark-800/40 p-7 space-y-5">
+          <h3 class="font-display text-sm font-700 text-white uppercase tracking-wider mb-2">Details</h3>
+          {% set info = [
+            ('🎓', 'Education', 'MSc Financial Technology, University of Birmingham'),
+            ('📍', 'Location', personal.location),
+            ('🎯', 'Focus', 'ML · FinTech · Data Engineering'),
+            ('📧', 'Email', personal.email)
+          ] %}
+          {% for icon, label, value in info %}
+          <div class="flex items-start gap-3">
+            <span class="text-lg">{{ icon }}</span>
+            <div>
+              <div class="text-xs text-gray-600 uppercase tracking-wider mb-0.5">{{ label }}</div>
+              <div class="text-gray-300 text-sm">{{ value }}</div>
+            </div>
+          </div>
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+
+    <!-- Skills grid -->
+    <div class="mb-20">
+      <div class="text-center mb-10 reveal">
+        <h2 class="font-display text-3xl font-700 text-white section-heading inline">Technical Expertise</h2>
+      </div>
+      <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6 stagger">
+        {% for category, skill_list in skills.items() %}
+        <div class="rounded-xl border border-dark-500/50 bg-dark-800/40 p-6 hover:border-accent/30
+                    transition-colors duration-300">
+          <div class="flex items-center gap-2 mb-4">
+            <div class="w-2 h-2 rounded-full bg-accent"></div>
+            <h3 class="font-display font-700 text-white text-sm">{{ category }}</h3>
+          </div>
+          <div class="space-y-2">
+            {% for skill in skill_list %}
+            <div class="flex items-center gap-2">
+              <div class="flex-1 h-1.5 rounded-full bg-dark-600/60 overflow-hidden">
+                <div class="h-full rounded-full bg-gradient-to-r from-accent to-cyan-400"
+                     style="width: {{ [60, 75, 85, 90, 95]|random }}%"></div>
+              </div>
+              <span class="text-gray-400 text-xs w-20 text-right">{{ skill }}</span>
+            </div>
+            {% endfor %}
+          </div>
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+
+    <!-- Focus areas -->
+    <div class="reveal">
+      <h2 class="font-display text-3xl font-700 text-white mb-8 section-heading">Focus Areas</h2>
+      <div class="grid md:grid-cols-3 gap-6 stagger">
+        {% set focus = [
+          ('📊', 'Credit Risk Analytics', 'Building interpretable, production-ready ML models for consumer credit applications. Default prediction, scorecard development, portfolio monitoring, and decisioning strategy optimisation.'),
+          ('💹', 'Financial Modelling & BI', 'Excel-based financial models (DCF, credit scorecards, portfolio risk) and Power BI dashboards for executive reporting, delinquency monitoring, and vintage analysis.'),
+          ('⚡', 'Data Engineering & SQL', 'Scalable data pipelines, SQL-first analytics, and distributed computing with Apache Spark — from raw data ingestion through to model-ready, insight-ready datasets.')
+        ] %}
+        {% for icon, title, desc in focus %}
+        <div class="rounded-xl border border-dark-500/50 bg-dark-800/40 p-7
+                    hover:border-accent/30 transition-colors duration-300 group">
+          <div class="text-3xl mb-4">{{ icon }}</div>
+          <h3 class="font-display font-700 text-white text-lg mb-3 group-hover:text-accent transition-colors">
+            {{ title }}
+          </h3>
+          <p class="text-gray-500 text-sm leading-relaxed">{{ desc }}</p>
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+
+  </div>
+</section>
+{% endblock %}

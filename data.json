@@ -113,7 +113,7 @@
         "PCA on real 30,000-record dataset: PC1 explains 31.6% variance, PC2 explains 20.0% — used for cluster visualisation and dimensionality analysis of six behavioural features."
       ],
       "github": "https://github.com/Astuteprasad/credit_advanced_analytics",
-      "live": "https://credit-advanced-analytics.onrender.com/",
+      "live": "https://creditadvancedanalytics-production.up.railway.app/",
       "highlight": true,
       "type": "dashboard"
     },
@@ -133,7 +133,7 @@
         "Vintage analysis tracking six monthly origination cohorts at 1, 3, 6, 9, 12, 18, and 24 months on book — bad rate growth curves per cohort demonstrating that lower-score cohorts deteriorate faster, validating scorecard discrimination over the full loan lifecycle."
       ],
       "github": "https://github.com/Astuteprasad/loan_dashboard",
-      "live": "https://loan-dashboard-wu6n.onrender.com/",
+      "live": "https://loandashboard-production-4fb4.up.railway.app/",
       "highlight": true,
       "type": "dashboard"
     },
